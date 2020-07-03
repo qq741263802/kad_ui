@@ -52,8 +52,8 @@ if __name__ == "__main__":
     testunit.addTest(Meail("test_Query"))
     #testunit.addTest(Meail("test_Meailadd"))
     # #生成测试报告
-    rep=Kad_Page.PublicMethod()
-    rep.CreatedReport(testunit)
+    # rep=Kad_Page.PublicMethod()
+    # rep.CreatedReport(testunit)
     # #发送测试报告邮件
     # path=rep.CreatedReportPath()
     # ema=Kad_Email.EmailSet()

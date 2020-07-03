@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import sys,time,json,requests,re,datetime,uuid,os,HTMLTestRunner,unittest
+import sys,time,json,requests,re,datetime,uuid,os,unittest
 from kadselenium_code import Kad_Login,Kad_Page,Kad_Common
 from kadselenium_model import Kad_Connect_db,Kad_Oracle_db
 from http import cookiejar

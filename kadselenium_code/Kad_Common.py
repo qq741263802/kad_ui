@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoAlertPresentException,NoSuchElementException
-import unittest, time, re,os,HTMLTestRunner,datetime,uuid,sys,urllib.request
+import unittest, time, re,os,datetime,uuid,sys,urllib.request
 #启动浏览器驱动函数pip
 def BrowserDrive():
 
