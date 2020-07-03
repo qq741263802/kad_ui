@@ -6,7 +6,6 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re,sys
-sys.path.append('D:/rj/pycharm/untitled/kadselenium_code')
 from kadselenium_code import Kad_Login,Kad_Page,Kad_Email
 from kadselenium_drp import Kad_MoreBuyMoreGiftList_drp
 from kadselenium_test import Kad_Test_drp,Kad_Test_po

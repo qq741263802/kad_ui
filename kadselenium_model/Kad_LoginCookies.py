@@ -15,7 +15,7 @@ def CookiesText():
         tokenwb = open('C:\Python27\cookies.txt','w')
         tokenwb.write(tokenrb)
     except Exception as e:
-        print e
+        print (e)
     finally:
         driver.quit()
         tokenwb.close()
@@ -34,7 +34,7 @@ def MlCookies():
         uptoken=Kad_Connect_db.KadModel()
         uptoken.UpdateToken(tokenrb,name)
     except Exception as e:
-        print e
+        print (e)
     finally:
         driver.quit()
 
@@ -54,7 +54,7 @@ def ManageCookies():
         nowtime=Kad_Common.ObtainNowTime()
         Kad_Oracle_db.UpdateToken(tokenrb,nowtime,name)
     except Exception as e:
-        print e
+        print (e)
     finally:
         driver.quit()
 
@@ -69,7 +69,7 @@ def WeixinCookies():
         nowtime=Kad_Common.ObtainNowTime()
         Kad_Oracle_db.UpdateToken(tokenrb,nowtime,name)
     except Exception as e:
-        print e
+        print (e)
     finally:
         driver.quit()
 

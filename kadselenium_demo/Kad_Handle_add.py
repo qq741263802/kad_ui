@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 import sys,time, urllib, urllib2, json,requests,re,datetime,uuid,os,HTMLTestRunner,unittest,thread,cookielib
-sys.path.append('D:\\rj\pycharm\untitled\kadselenium_test')
-sys.path.append('D:\\rj\pycharm\untitled\kadselenium_code')
 from kadselenium_code import Kad_Login,Kad_Page,Kad_Common
 from kadselenium_drp import Kad_MealSetting_drp
 from kadselenium_po import Kad_NewFlowList_po
 from selenium.webdriver.common.by import By
 from kadselenium_model import Kad_Connect_db,Kad_Oracle_db,Kad_TsetDbService
 
-url='http://rcunion.360kad.com/Khy/GetWare?wareCode=478&key=khy123'
-text=Kad_Common.Httpcclientapi(url)
-print text
+
 
 
 

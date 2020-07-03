@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
-#import MySQLdb
+
 from selenium.webdriver.common.by import By
-from MySQLdb_125.MySQLdb import release
-#from MySQLdb_125 import MySQLdb
-import MySQLdb
+import pymysql
 
 
 
@@ -11,7 +9,7 @@ import MySQLdb
 class MyConnection():
 
         def ConnectionOpen(self,sql):
-                conn = MySQLdb.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',charset='utf8')
+                conn = pymysql.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',charset='utf8')
                 cur = conn.cursor()
                 cur.execute(sql)
                 cur.close()
@@ -34,7 +32,7 @@ class KadModel():
 
 
       def QueryToken(self,name):
-            conn = MySQLdb.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',charset='utf8')
+            conn = pymysql.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',charset='utf8')
             sql="select * from kad_po.managecookies where username='%s'"%(name)
             cur = conn.cursor()
             cur.execute(sql)
@@ -60,8 +58,8 @@ class KadModel():
 
 #首营商品档案商品查询
       def WaerQuery(self):
-            list = [];
-            conn = MySQLdb.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',
+            list = []
+            conn = pymysql.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',
                                    charset='utf8')
             sql = 'select RegisTrationNumber,maxcount from kad_po.UV_WI_FIRSTOPERATIONGOOD'
             cur = conn.cursor()
@@ -79,7 +77,7 @@ class KadModel():
 
 #首营商品档案商品条数
       def MaxCount(self,max):
-            conn = MySQLdb.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',
+            conn = pymysql.connect(host='192.168.1.26', port=5566, user='lihuaming', passwd='123456', db='kad_po',
                                    charset='utf8')
             sql = "select maxcount from kad_po.UV_WI_FIRSTOPERATIONGOOD where RegisTrationNumber='%s'"%(max)
             cur = conn.cursor()

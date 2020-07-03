@@ -6,7 +6,6 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re,sys
-sys.path.append('D:/rj/pycharm/untitled/kadselenium_code')
 from kadselenium_code import Kad_Login,Kad_Page,Kad_Email
 
 
@@ -34,7 +33,7 @@ class Meail(unittest.TestCase):
             driver.find_element_by_xpath('/html/body/div[12]/table/tbody/tr[2]/td[2]/div/div[3]/div/div[2]/div[3]').click()
             driver.find_element_by_xpath('/html/body/div[12]/table/tbody/tr[2]/td[2]/div/div[2]/div/div[1]/div[3]').click()
         except RuntimeError as e:
-            print e
+            print (e)
         finally:
         # 切换到对应关系新增页面表单输入对应关系信息
             driver.find_element_by_xpath(".//*[@id='main_menu']/div[1]/span").click()
@@ -70,7 +69,7 @@ class Meail(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="search_form"]/ul/li[1]/div').click()
         texts=driver.find_element_by_xpath('//*[@id="main_grid|2|r1001|c104"]/div').text
         self.assertEquals(texts,'t_69762hk')
-        print texts
+        print (texts)
         time.sleep(10)
 
 

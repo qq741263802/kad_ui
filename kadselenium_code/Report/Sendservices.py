@@ -8,7 +8,7 @@ from kadselenium_code import Kad_Email,Kad_Page
 def SendReport(reportpath,receiver,subject,user,pwd):
     sp = Kad_Page.PublicMethod()
     path = sp.CreatedReportPath(reportpath)
-    print path
+    print (path)
     em = Kad_Email.EmailSet()
     if user=='2671459625@qq.com':
         smtpserver = 'smtp.qq.com'

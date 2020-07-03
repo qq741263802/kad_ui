@@ -48,7 +48,7 @@ class Page(object):
                 self.find_element(*loc).clear()
             self.find_element(*loc).send_keys(value)
         except AttributeError:
-            print '%s page does not have "%s" locator' % (self, loc)
+            print ('%s page does not have "%s" locator' % (self, loc))
 
 
 #文件、报告操作类
@@ -112,7 +112,7 @@ class PublicMethod():
                 if s == 'py':
                     os.system(''+path+'\\%s 1>>log.txt 2>&1' % a)
             except Exception as e:
-                print e
+                print (e)
 
 
     # 批量添加测试套件
