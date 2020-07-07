@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
+from http import cookiejar
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import NoAlertPresentException
-import unittest, time, re,os,HTMLTestRunner,datetime,uuid,urllib, urllib2,sys,cookielib
-
-
-
-#启动浏览器驱动函数
+from selenium.common.exceptions import NoAlertPresentException,NoSuchElementException
+import unittest, time, re,os,datetime,uuid,sys,urllib.request
+#启动浏览器驱动函数pip
 def BrowserDrive():
 
     driver=webdriver.Chrome()
@@ -46,15 +43,17 @@ def GetGuid():
 def Httpcclientapi(url):
 
 #定义接收服务器cookies方法
-    cj = cookielib.CookieJar()
-    opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-    urllib2.install_opener(opener)
+    cj = cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+    urllib.request.install_opener(opener)
+
+
 
 
 
 #请求接口
-    req = urllib2.Request(url=url)
-    res_data = urllib2.urlopen(req)
+    req = urllib.request.Request(url=url)
+    res_data = urllib.request.urlopen(req)
     return res_data
 
 

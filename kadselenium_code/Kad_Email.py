@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import smtplib,os,sys
-sys.path.append('D:\\rj\pycharm\untitled\kadselenium_code')
 from kadselenium_code import Kad_Login,Kad_Page
 from email.mime.text import MIMEText
 from email.header import Header

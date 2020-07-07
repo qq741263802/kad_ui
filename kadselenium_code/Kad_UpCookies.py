@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-import sys,time, urllib, urllib2, json,requests,re,datetime,uuid,os,HTMLTestRunner,unittest,thread,cookielib
-sys.path.append('D:\\rj\pycharm\untitled\kadselenium_code')
+import sys,time,json,requests,re,datetime,uuid,os,unittest
 from kadselenium_code import Kad_Login,Kad_Page,Kad_Common
 from kadselenium_model import Kad_Connect_db,Kad_Oracle_db
-
+from http import cookiejar
+import urllib.request,urllib.parse
 
 def InterfaceCookies(url,name,token):
 #变量
     argsdata = {"filters": [], "sorts": [], "dbKey": None, "entityType": None, "page": 1, "pageSize": 20}
-    dataurlencode = urllib.urlencode(argsdata)
+    dataurlencode = urllib.parse.urlencode(argsdata)
     posturl = url
     if name=='lihuaming':
         cookies = 'Kad_LoginName=' + name + ';Kad_Token=' + token
@@ -20,16 +20,17 @@ def InterfaceCookies(url,name,token):
     tokenvalue=None
 
 
-#定义接收服务器cookies方法
-    cj = cookielib.CookieJar()
-    opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
-    urllib2.install_opener(opener)
 
+#定义接收服务器cookies方法
+    cj = cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+    urllib.request.install_opener(opener)
 
 
 #请求接口
-    req = urllib2.Request(url=posturl,data=dataurlencode,headers=cookie_headers)
-    res_data = urllib2.urlopen(req)
+    req = urllib.request.Request(url=url)
+    res_data = urllib.request.urlopen(req)
+    return res_data
 
 
 #保存cookies值

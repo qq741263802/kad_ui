@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
-import unittest,HTMLTestRunner,time,os
+import unittest,time,os
 from kadselenium_code import Kad_Page
 from kadselenium_model import Kad_Connect_db,Kad_Oracle_db
 

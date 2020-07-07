@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-import unittest, time, re,os,HTMLTestRunner
+import unittest, time, re,os
 from kadselenium_code import Kad_Common
 #基础类，用于所有页面类继承
 class Page(object):
@@ -48,27 +48,27 @@ class Page(object):
                 self.find_element(*loc).clear()
             self.find_element(*loc).send_keys(value)
         except AttributeError:
-            print '%s page does not have "%s" locator' % (self, loc)
+            print ('%s page does not have "%s" locator' % (self, loc))
 
 
-#文件、报告操作类
-class PublicMethod():
-
-    #运行测试用例，生成测试报告
-    def CreatedReport(self, testunit):
-        now = time.strftime("%Y-%m-%d %H_%M_%S")
-        # 定义个报告存放路径
-        filename = 'E:\\report\\' + now + 'report.html'
-        fp = file(filename, 'wb')
-        # 定义测试报告
-        runner = HTMLTestRunner.HTMLTestRunner(
-            stream=fp,
-            title=u'2.0后台自动化测试报告',
-            description=u'用例执行情况：')
-        # 运行测试用例
-        runner.run(testunit)
-        # 关闭报告文件
-        fp.close()
+# #文件、报告操作类
+# class PublicMethod():
+#
+#     #运行测试用例，生成测试报告
+#     def CreatedReport(self, testunit):
+#         now = time.strftime("%Y-%m-%d %H_%M_%S")
+#         # 定义个报告存放路径
+#         filename = 'E:\\report\\' + now + 'report.html'
+#         fp = file(filename, 'wb')
+#         # 定义测试报告
+#         runner = HTMLTestRunner.HTMLTestRunner(
+#             stream=fp,
+#             title=u'2.0后台自动化测试报告',
+#             description=u'用例执行情况：')
+#         # 运行测试用例
+#         runner.run(testunit)
+#         # 关闭报告文件
+#         fp.close()
 
 
     # 按生成时间排序获取文件路径
@@ -112,7 +112,7 @@ class PublicMethod():
                 if s == 'py':
                     os.system(''+path+'\\%s 1>>log.txt 2>&1' % a)
             except Exception as e:
-                print e
+                print (e)
 
 
     # 批量添加测试套件

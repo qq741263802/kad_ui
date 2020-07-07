@@ -6,7 +6,6 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 import unittest, time, re,sys
-sys.path.append('D:/rj/pycharm/untitled/kadselenium_code')
 from kadselenium_code import Kad_Login,Kad_Page,Kad_Email
 from kadselenium_drp import Kad_MoreBuyMoreGiftList_drp,Kad_MealSetting_drp
 
@@ -53,8 +52,8 @@ if __name__ == "__main__":
     testunit.addTest(Meail("test_Query"))
     #testunit.addTest(Meail("test_Meailadd"))
     # #生成测试报告
-    rep=Kad_Page.PublicMethod()
-    rep.CreatedReport(testunit)
+    # rep=Kad_Page.PublicMethod()
+    # rep.CreatedReport(testunit)
     # #发送测试报告邮件
     # path=rep.CreatedReportPath()
     # ema=Kad_Email.EmailSet()

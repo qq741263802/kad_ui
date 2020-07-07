@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from kadselenium_code import Kad_Email,Kad_Page
-import Sendservices
+from kadselenium_code.Report import Sendservices
 
 def emsendrep():
     reportpath = 'D:\jemterager\\report\e+\html'
