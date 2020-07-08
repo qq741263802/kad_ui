@@ -1,7 +1,7 @@
 # coding=utf-8
 import requests,json,xlwt,ssl,sys,re
 import brotli,datetime
-
+import hashlib,base64
 def getLbPhone():
     headers2 = {
         'authority':'www.lubanx.com',
@@ -141,29 +141,36 @@ def getErLangChaPhone():
 
 
 def est():
-    header = {
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
-        #'Cookie': 'UM_distinctid=1732c1ce3dd241-0e60cc29f896ca-58133018-144000-1732c1ce3de6ad; CNZZDATA1277880260=765441170-1594167720-%7C1594167720',
-        'Csrf-Sign': 'db3d3fe0cefc83c2ede6fd80ed0c9e0c',
-        'Host': 'www.erlangcha.com',
-        'Keep-At': '1594203116',
-        'Keep-Csrf': 'cabbd66dd58ccf36c5e3119685ef39eb',
-        'Keep-Mt': '8839',
-        'Pragma': 'no-cache',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
-        'sign': '92a6f596a73a7bd1a97e7cb9979a1672',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.14 Safari/537.36'
-    }
-    url = 'https://www.erlangcha.com/api/toadyNewProduct?dat_source_type=1&page=26'
-    pro_response = requests.get(url=url, headers=header)
-    pro_res = pro_response.content
-    print(pro_res)
+    for i in range(1,15):
+        url = 'https://www.erlangcha.com/api/toadyNewProduct?dat_source_type=1&page='+str(i)+''
+        list=[100,97,116,95,115,111,117,114,99,101,95,116,121,112,101,37,51,68,49,37,50,54,112,97,103,101,37,51,68,48,37,50,54,107,101,121,37,51,68,55,55,99,57,56,50,98,99,99,97,53,100,98,57,49,98,98,102,48,53,52,51,56,56,54,99,98,52,52,48,100,51]
+        list[29]=48+i
+        #MD5加密
+        strlist=str(list).replace('[','').replace(']','').replace(" ", "")
+        m = hashlib.md5(strlist.encode())
+        res = m.hexdigest()
+        header = {
+            'Accept': 'application/json, text/plain, */*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'zh-CN,zh;q=0.9',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive',
+            # 'Cookie': 'UM_distinctid=1732c1ce3dd241-0e60cc29f896ca-58133018-144000-1732c1ce3de6ad; CNZZDATA1277880260=765441170-1594167720-%7C1594167720',
+            'Csrf-Sign': 'db3d3fe0cefc83c2ede6fd80ed0c9e0c',
+            'Host': 'www.erlangcha.com',
+            'Keep-At': '1594203116',
+            'Keep-Csrf': 'cabbd66dd58ccf36c5e3119685ef39eb',
+            'Keep-Mt': '8839',
+            'Pragma': 'no-cache',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-origin',
+            'sign': res,
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.14 Safari/537.36'
+        }
+        pro_response = requests.get(url=url, headers=header)
+        pro_res = pro_response.content
+        print(pro_res)
 
 
 
