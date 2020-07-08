@@ -61,7 +61,7 @@ def getLbPhone():
         f.save('D:/鲁班-服饰内衣'+datetime.datetime.now().strftime('%Y%m%d')+'.xls')
 
 def getErLangChaPhone():
-    erlangchaheader = {
+    erlangchaheader1 = {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'zh-CN,zh;q=0.9',
@@ -75,16 +75,35 @@ def getErLangChaPhone():
         'sign': '54289ee201bef0f85f5c23d8338bba41',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
     }
+    erlangchaheader2={
+        'Accept': 'application/json, text/plain, */*',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'zh-CN,zh;q=0.9',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
+        'Cookie': 'UM_distinctid=1732c1ce3dd241-0e60cc29f896ca-58133018-144000-1732c1ce3de6ad; CNZZDATA1277880260=765441170-1594167720-%7C1594167720',
+        'Csrf-Sign': '8414e61061650d7961990bd746ae5df2',
+        'Host': 'www.erlangcha.com',
+        'Keep-At': '1594173560',
+        'Keep-Csrf': 'cabbd66dd58ccf36c5e3119685ef39eb',
+        'Keep-Mt': '590',
+        'Pragma': 'no-cache',
+        'Sec-Fetch-Dest': 'empty',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-origin',
+        'sign': '165f3ea2ac3975edd97ca292883951f1',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.14 Safari/537.36'
+    }
     k = 1
     f = xlwt.Workbook()
     sheet1 = f.add_sheet(u'联系方式', cell_overwrite_ok=True)
     rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for i in range(3, 7):
+    for ki in range(1, 99):
         try:
-            url = 'https://www.erlangcha.com/api/toadyNewProduct?dat_source_type=1&page=3'
-            pro_response=requests.get(url=url,headers=erlangchaheader)
+            url = 'https://www.erlangcha.com/api/toadyNewProduct?dat_source_type=1&page='+str(ki)+''
+            pro_response=requests.get(url=url,headers=erlangchaheader2)
             pro_res = pro_response.json()
             print(pro_res)
             for pro_ki in pro_res['data']['content']:
@@ -116,31 +135,37 @@ def getErLangChaPhone():
         except Exception as e:
             print("异常" + e)
             continue
-        print("执行保存")
-        f.save('D:/a.xls')
+        print("执行保存"+str(ki))
+        f.save('D:/鲁班今日上新榜.xls')
 
-getErLangChaPhone()
+
 
 def est():
     header = {
         'Accept': 'application/json, text/plain, */*',
         'Accept-Encoding': 'gzip, deflate, br',
         'Accept-Language': 'zh-CN,zh;q=0.9',
+        'Cache-Control': 'no-cache',
         'Connection': 'keep-alive',
-        'Cookie': 'UM_distinctid=173298f7570e1-0560294cff42d7-c343162-100200-173298f7571cb; CNZZDATA1277880260=1891817800-1594125318-%7C1594130901',
-        'Csrf-Sign': '5b3c748d7f9200a930de571c49bd5b74',
+        #'Cookie': 'UM_distinctid=1732c1ce3dd241-0e60cc29f896ca-58133018-144000-1732c1ce3de6ad; CNZZDATA1277880260=765441170-1594167720-%7C1594167720',
+        'Csrf-Sign': 'db3d3fe0cefc83c2ede6fd80ed0c9e0c',
         'Host': 'www.erlangcha.com',
-        'Keep-At': '1594136929',
+        'Keep-At': '1594203116',
         'Keep-Csrf': 'cabbd66dd58ccf36c5e3119685ef39eb',
-        'Keep-Mt': '8811',
-        'sign': '54289ee201bef0f85f5c23d8338bba41',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36'
+        'Keep-Mt': '8839',
+        'Pragma': 'no-cache',
+        'Sec-Fetch-Dest': 'empty',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'same-origin',
+        'sign': '92a6f596a73a7bd1a97e7cb9979a1672',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.14 Safari/537.36'
     }
-    url = 'https://www.erlangcha.com/api/toadyNewProduct?dat_source_type=1&page=3'
+    url = 'https://www.erlangcha.com/api/toadyNewProduct?dat_source_type=1&page=26'
     pro_response = requests.get(url=url, headers=header)
     pro_res = pro_response.content
     print(pro_res)
 
 
 
-
+#getErLangChaPhone()
+est()
