@@ -101,7 +101,7 @@ def getErLangChaPhone():
     rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(1000, 1500):
+    for ki in range(4177, 5000):
         try:
             url = 'https://www.erlangcha.com/api/list?page='+str(ki)+'&pageList=20&dat_source_type=1'
             sign = signmd5(ki)
@@ -126,6 +126,7 @@ def getErLangChaPhone():
             }
             pro_response=requests.get(url=url,headers=header)
             pro_res = pro_response.json()
+            print(pro_res)
             for pro_ki in pro_res['data']['content']:
                 try:
                     redirect = pro_ki['shop_link']
@@ -156,7 +157,7 @@ def getErLangChaPhone():
             print("系统异常:" + e)
             continue
         print("执行保存"+str(ki))
-        f.save('D:/鲁班商品排行-4.xls')
+        f.save('D:/鲁班商品排行-12.xls')
 
 
 
