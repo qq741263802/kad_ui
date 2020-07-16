@@ -65,10 +65,11 @@ def getLbPhone():
 
 # MD5加密
 def signmd5(page):
-    list = [100, 97, 116, 95, 115, 111, 117, 114, 99, 101, 95, 116, 121, 112, 101, 37, 51, 68, 49, 37, 50, 54, 112, 97,
+    list1 = [100, 97, 116, 95, 115, 111, 117, 114, 99, 101, 95, 116, 121, 112, 101, 37, 51, 68, 49, 37, 50, 54, 112, 97,
             103, 101, 37, 51, 68, 49, 37, 50, 54, 112, 97, 103, 101, 76, 105, 115, 116, 37, 51, 68, 50, 48, 37, 50, 54,
             107, 101, 121, 37, 51, 68, 55, 55, 99, 57, 56, 50, 98, 99, 99, 97, 53, 100, 98, 57, 49, 98, 98, 102, 48, 53,
             52, 51, 56, 56, 54, 99, 98, 52, 52, 48, 100, 51]
+    list=[100,97,116,95,115,111,117,114,99,101,95,116,121,112,101,37,51,68,49,37,50,54,112,97,103,101,37,51,68,51,37,50,54,112,97,103,101,76,105,115,116,37,51,68,50,48,37,50,54,107,101,121,37,51,68,97,97,49,57,101,55,52,57,52,55,53,56,50,50,100,101,49,49,101,55,57,50,52,100,100,55,50,56,56,102,54,51]
     if page < 10:
         list[29] = 48 + page
     if page>9 and  page<100:
@@ -90,10 +91,6 @@ def signmd5(page):
 
 
 
-
-
-
-
 def getErLangChaPhone():
     k = 1
     f = xlwt.Workbook()
@@ -101,10 +98,11 @@ def getErLangChaPhone():
     rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(4177, 5000):
+    for ki in range(5000, 6000):
         try:
             url = 'https://www.erlangcha.com/api/list?page='+str(ki)+'&pageList=20&dat_source_type=1'
             sign = signmd5(ki)
+            print(sign)
             header = {
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Encoding': 'gzip, deflate, br',
@@ -157,10 +155,7 @@ def getErLangChaPhone():
             print("系统异常:" + e)
             continue
         print("执行保存"+str(ki))
-        f.save('D:/鲁班商品排行-12.xls')
-
-
-
+        f.save('D:/鲁班商品排行-13.xls')
 
 def est():
     for i in range(1,15):
