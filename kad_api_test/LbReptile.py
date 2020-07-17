@@ -91,6 +91,10 @@ def signmd5(page):
 
 
 
+
+
+
+
 def getErLangChaPhone():
     k = 1
     f = xlwt.Workbook()
@@ -98,11 +102,10 @@ def getErLangChaPhone():
     rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(5000, 6000):
+    for ki in range(1, 10):
         try:
             url = 'https://www.erlangcha.com/api/list?page='+str(ki)+'&pageList=20&dat_source_type=1'
             sign = signmd5(ki)
-            print(sign)
             header = {
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Encoding': 'gzip, deflate, br',
@@ -124,7 +127,6 @@ def getErLangChaPhone():
             }
             pro_response=requests.get(url=url,headers=header)
             pro_res = pro_response.json()
-            print(pro_res)
             for pro_ki in pro_res['data']['content']:
                 try:
                     redirect = pro_ki['shop_link']
