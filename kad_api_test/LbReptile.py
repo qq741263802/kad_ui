@@ -103,7 +103,7 @@ def getErLangChaPhone():
     rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(1, 3):
+    for ki in range(6500, 7000):
         try:
             url='https://www.erlangcha.com/api/getShopList?page='+str(ki)+'&dat_source_type=1'
             #url1 = 'https://www.erlangcha.com/api/list?page='+str(ki)+'&pageList=20&dat_source_type=1'
@@ -145,7 +145,7 @@ def getErLangChaPhone():
                     mobile = moblie_res['data']['mobile']
                     sku_min_price = moblie_res['data']['sku_min_price']/100
                     sku_max_price = moblie_res['data']['sku_max_price']/100
-                    if (mobile == '' or mobile == None):
+                    if (mobile == '' or mobile == None or len(mobile)<8):
                         continue
                     sheet1.write(k, 0, company_name)
                     sheet1.write(k, 1, name)
@@ -161,7 +161,7 @@ def getErLangChaPhone():
             print("系统异常:" + e)
             continue
         print("执行保存"+str(ki))
-        f.save('D:/鲁班商品排行-14.xls')
+        f.save('D:/鲁班商品排行-22.xls')
 
 def est():
     for i in range(1,15):
