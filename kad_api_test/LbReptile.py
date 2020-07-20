@@ -92,7 +92,7 @@ def signmd5(page):
 
 
 
-#sales_volume
+
 
 
 
@@ -147,6 +147,7 @@ def getErLangChaPhone():
                     mobile = moblie_res['data']['mobile']
                     sku_min_price = moblie_res['data']['sku_min_price']/100
                     sku_max_price = moblie_res['data']['sku_max_price']/100
+                    if (mobile == '' or mobile == None or len(mobile)<8):
                     sales_volume = moblie_res['data']['sales_volume']
                     shopid = moblie_res['data']['shopid']
                     shopmobileurl='https://luban.snssdk.com/shop/info?id=' + str(shopid) + '&_ts=1595258534707'
