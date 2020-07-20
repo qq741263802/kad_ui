@@ -92,7 +92,7 @@ def signmd5(page):
 
 
 
-
+#sales_volume
 
 
 
@@ -100,7 +100,7 @@ def getErLangChaPhone():
     k = 1
     f = xlwt.Workbook()
     sheet1 = f.add_sheet(u'联系方式', cell_overwrite_ok=True)
-    rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价']
+    rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价','总销量','公司电话']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
     for ki in range(1, 3):
@@ -130,7 +130,9 @@ def getErLangChaPhone():
             }
             pro_response=requests.get(url=url,headers=header)
             pro_res = pro_response.json()
-            print(pro_res)
+            print(pro_res['code'])
+            if(pro_res['code']==400 or pro_res['code']==500 or pro_response.status_code!=200):
+                continue
             for pro_ki in pro_res['data']['data']:
                 try:
                     redirect = pro_ki['shop_link']
@@ -145,7 +147,15 @@ def getErLangChaPhone():
                     mobile = moblie_res['data']['mobile']
                     sku_min_price = moblie_res['data']['sku_min_price']/100
                     sku_max_price = moblie_res['data']['sku_max_price']/100
+                    sales_volume = moblie_res['data']['sales_volume']
+                    shopid = moblie_res['data']['shopid']
+                    shopmobileurl='https://luban.snssdk.com/shop/info?id=' + str(shopid) + '&_ts=1595258534707'
+                    shopmobile_response = requests.get(shopmobileurl)
+                    shopmobile_res = shopmobile_response.json()
+                    shopmobil=shopmobile_res['data']['mobile']
                     if (mobile == '' or mobile == None):
+                        continue
+                    if (shopmobil == '' or shopmobil == None):
                         continue
                     sheet1.write(k, 0, company_name)
                     sheet1.write(k, 1, name)
@@ -153,6 +163,8 @@ def getErLangChaPhone():
                     sheet1.write(k, 3, redirect)
                     sheet1.write(k, 4, sku_min_price)
                     sheet1.write(k, 5, sku_max_price)
+                    sheet1.write(k, 6, sales_volume)
+                    sheet1.write(k, 7, shopmobil)
                     k += 1
                 except Exception as es:
                     print("异常:" + es)
@@ -161,7 +173,7 @@ def getErLangChaPhone():
             print("系统异常:" + e)
             continue
         print("执行保存"+str(ki))
-        f.save('D:/鲁班商品排行-14.xls')
+        f.save('D:/二郎查鲁班商品排行-20.xls')
 
 def est():
     for i in range(1,15):
