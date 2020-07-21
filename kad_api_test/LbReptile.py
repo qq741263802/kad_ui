@@ -97,10 +97,10 @@ def getErLangChaPhone():
     k = 1
     f = xlwt.Workbook()
     sheet1 = f.add_sheet(u'联系方式', cell_overwrite_ok=True)
-    rowTitle = [u'公司名称',u'商品名称',u'电话',u'商品链接',u'产品最小单价',u'产品最大单价','总销量','公司电话']
+    rowTitle = [u'联系人ID',u'姓名',u'电话',u'公司',u'职位',u'地址','备注','邮箱','微信号','价格','销量','客服电话','负责人姓名','负责人电话','来源','类型','级别','状态','媒体','意向程度','运营续费','运营状态','开户数','负责人','共享给员工','共享给部门']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(1, 3):
+    for ki in range(6000, 7000):
         try:
             url='https://www.erlangcha.com/api/getShopList?page='+str(ki)+'&dat_source_type=1'
             #url1 = 'https://www.erlangcha.com/api/list?page='+str(ki)+'&pageList=20&dat_source_type=1'
@@ -143,6 +143,7 @@ def getErLangChaPhone():
                     mobile = moblie_res['data']['mobile']
                     sku_min_price = moblie_res['data']['sku_min_price']/100
                     sku_max_price = moblie_res['data']['sku_max_price']/100
+                    price=str(sku_min_price)+'-'+str(sku_max_price)
                     sales_volume = pro_ki['sales_volume']
                     shopid = moblie_res['data']['shop_id']
                     shopmobileurl='https://luban.snssdk.com/shop/info?id=' + str(shopid) + '&_ts=1595258534707'
@@ -153,23 +154,22 @@ def getErLangChaPhone():
                         continue
                     if (shopmobil == '' or shopmobil == None):
                         continue
-                    sheet1.write(k, 0, company_name)
-                    sheet1.write(k, 1, name)
+                    sheet1.write(k, 3, company_name)
+                    sheet1.write(k, 6, name)
                     sheet1.write(k, 2, mobile)
-                    sheet1.write(k, 3, redirect)
-                    sheet1.write(k, 4, sku_min_price)
-                    sheet1.write(k, 5, sku_max_price)
-                    sheet1.write(k, 6, sales_volume)
-                    sheet1.write(k, 7, shopmobil)
+                    sheet1.write(k, 5, redirect)
+                    sheet1.write(k, 9, price)
+                    sheet1.write(k, 10, sales_volume)
+                    sheet1.write(k, 11, shopmobil)
                     k += 1
                 except Exception as es:
-                    print("异常:" + es)
+                    #print("异常:" + es)
                     continue
         except Exception as e:
-            print("系统异常:" + e)
+            #print("系统异常:" + e)
             continue
         print("执行保存"+str(ki))
-        f.save('D:/二郎查鲁班商品排行-20.xls')
+        f.save('D:/二郎查鲁班商品排行-3.xls')
 
 def est():
     for i in range(1,15):
