@@ -1,7 +1,7 @@
 # coding=utf-8
 import requests,json,xlwt,ssl,sys,re
 import brotli,datetime
-import hashlib,base64
+import hashlib,base64,os
 def getLbPhone():
     headers2 = {
         'authority':'www.lubanx.com',
@@ -169,7 +169,7 @@ def getErLangChaPhone():
             #print("系统异常:" + e)
             continue
         print("执行保存"+str(ki))
-        f.save('D:/二郎查鲁班商品排行-3.xls')
+        f.save('D:/二郎查鲁班商品排行-'+os.getpid()+'.xls')
 
 def est():
     for i in range(1,15):
@@ -200,8 +200,10 @@ def est():
 
 
 
-getErLangChaPhone()
+#getErLangChaPhone()
 #est()
+for i in range(1,10):
+    print(os.getpid())
 
 
 
