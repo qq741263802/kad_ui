@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list id="379dcbf6-5c2b-459c-b17d-ea6321ab9e3d" name="Default" comment="" />
     <list default="true" id="3e4a2815-52b2-480a-a053-40a8273f449a" name="Default Changelist" comment="Default Changelist">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kad_api_test/LbReptile.py" afterPath="$PROJECT_DIR$/kad_api_test/LbReptile.py" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +118,7 @@
       <file leaf-file-name="LbReptile.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kad_api_test/LbReptile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="-176">
               <caret line="111" column="23" lean-forward="true" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
               <folding>
                 <element signature="e#15#51#0" expanded="true" />
@@ -655,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595327110939</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Default Changelist">
+      <created>1595463248299</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595463248299</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -710,6 +714,10 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.47276855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="WindowStateProjectService">
     <state x="587" y="14" key="#LbReptile" timestamp="1595325364572">
@@ -1117,7 +1125,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kad_api_test/LbReptile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
+        <state relative-caret-position="-176">
           <caret line="111" column="23" lean-forward="true" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
           <folding>
             <element signature="e#15#51#0" expanded="true" />
