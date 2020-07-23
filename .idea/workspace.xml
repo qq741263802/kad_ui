@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list id="379dcbf6-5c2b-459c-b17d-ea6321ab9e3d" name="Default" comment="" />
     <list default="true" id="3e4a2815-52b2-480a-a053-40a8273f449a" name="Default Changelist" comment="Default Changelist">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/untitled.iml" afterPath="$PROJECT_DIR$/.idea/untitled.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kad_api_test/LbReptile.py" afterPath="$PROJECT_DIR$/kad_api_test/LbReptile.py" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
     <SUITE FILE_PATH="coverage/untitled$Kad_Test_po.coverage" NAME="Kad_Test_po Coverage Results" MODIFIED="1501479503262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kadselenium_test" />
     <SUITE FILE_PATH="coverage/untitled$Kad_Test_gsp.coverage" NAME="Kad_Test_gsp Coverage Results" MODIFIED="1501469154305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kadselenium_test" />
     <SUITE FILE_PATH="coverage/untitled$SendReport_em.coverage" NAME="SendReport_em Coverage Results" MODIFIED="1511862964291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kadselenium_code/Report" />
-    <SUITE FILE_PATH="coverage/kad_ui$LbReptile.coverage" NAME="LbReptile Coverage Results" MODIFIED="1595427231299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kad_api_test" />
+    <SUITE FILE_PATH="coverage/kad_ui$LbReptile.coverage" NAME="LbReptile Coverage Results" MODIFIED="1595434750619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kad_api_test" />
     <SUITE FILE_PATH="coverage/untitled$Unittests_for_kadselenium_test_test_drp_Meail.coverage" NAME="Unittests for kadselenium_test.test_drp.Meail Coverage Results" MODIFIED="1495179424888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/untitled$db_test.coverage" NAME="db_test Coverage Results" MODIFIED="1496319856334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kadselenium_test" />
     <SUITE FILE_PATH="coverage/untitled$Unittests_in_MoreBuyMoreGiftList_po_py.coverage" NAME="Unittests in MoreBuyMoreGiftList_po.py Coverage Results" MODIFIED="1493966831218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -107,32 +108,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Kad_Page.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kadselenium_code/Kad_Page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-              <folding>
-                <element signature="e#24#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kad_Login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kadselenium_code/Kad_Login.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="YouMiReptile.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kad_api_test/YouMiReptile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2838">
+            <state relative-caret-position="231">
               <caret line="129" column="32" lean-forward="false" selection-start-line="129" selection-start-column="32" selection-end-line="134" selection-end-column="26" />
               <folding />
             </state>
@@ -142,8 +121,8 @@
       <file leaf-file-name="LbReptile.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kad_api_test/LbReptile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="171" column="50" lean-forward="false" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
+            <state relative-caret-position="88">
+              <caret line="111" column="23" lean-forward="true" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
               <folding>
                 <element signature="e#15#51#0" expanded="true" />
               </folding>
@@ -151,61 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DfyReptile.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kad_api_test/DfyReptile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Workbook.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/xlwt/Workbook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15554">
-              <caret line="709" column="0" lean-forward="false" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompoundDoc.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/xlwt/CompoundDoc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5808">
-              <caret line="265" column="36" lean-forward="true" selection-start-line="265" selection-start-column="36" selection-end-line="265" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6820">
-              <caret line="311" column="0" lean-forward="false" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kad_UpCookies.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kadselenium_code/Kad_UpCookies.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="161">
+              <caret line="373" column="0" lean-forward="false" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -226,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kad_api_test/DfyReptile.py" />
         <option value="$PROJECT_DIR$/kad_api_test/LbReptile.py" />
       </list>
     </option>
@@ -568,12 +496,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -643,7 +565,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3e4a2815-52b2-480a-a053-40a8273f449a" name="Default Changelist" comment="" />
-      <changelist id="379dcbf6-5c2b-459c-b17d-ea6321ab9e3d" name="Default" comment="" />
       <created>1593742429163</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -668,7 +589,8 @@
       <workItem from="1595054945433" duration="21000" />
       <workItem from="1595055429510" duration="1504000" />
       <workItem from="1595057876900" duration="848000" />
-      <workItem from="1595316701148" duration="5357000" />
+      <workItem from="1595316701148" duration="5513000" />
+      <workItem from="1595392685414" duration="512000" />
     </task>
     <task id="LOCAL-00001" summary="修改包">
       <created>1593748922150</created>
@@ -726,28 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595321741822</updated>
     </task>
-    <task id="LOCAL-00009" summary="优化代码">
-      <created>1595347729143</created>
+    <task id="LOCAL-00009" summary="优化">
+      <created>1595327110939</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1595347729143</updated>
+      <updated>1595327110939</updated>
     </task>
-    <task id="LOCAL-00010" summary="Default Changelist">
-      <created>1595348598209</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1595348598209</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Default Changelist">
-      <created>1595427067952</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1595427067952</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -755,16 +663,16 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.49785867" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3262295" sideWeight="0.23524962" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2409836" sideWeight="0.48260212" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.52723145" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2409836" sideWeight="0.4795764" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.49785867" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3262295" sideWeight="0.76475036" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3262295" sideWeight="0.7602118" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30786687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.47579426" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.47276855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -777,22 +685,31 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3310811" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改包" />
-    <MESSAGE value="添加reptiles类" />
-    <MESSAGE value="添加加密逻辑" />
-    <MESSAGE value="修改爬虫方法" />
-    <MESSAGE value="优化" />
-    <MESSAGE value="优化代码" />
-    <MESSAGE value="Default Changelist" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
+    <layout-to-restore>
+      <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.49785867" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.52723145" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2409836" sideWeight="0.4795764" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.49785867" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.7602118" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30786687" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32612056" sideWeight="0.49468893" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3310811" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.47276855" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="WindowStateProjectService">
     <state x="587" y="14" key="#LbReptile" timestamp="1595325364572">
@@ -807,30 +724,30 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="409" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1594271746702" />
-    <state x="454" y="1" key="CommitChangelistDialog2" timestamp="1595321737109">
+    <state x="454" y="1" key="CommitChangelistDialog2" timestamp="1595327106441">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="454" y="1" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1595321737109" />
+    <state x="454" y="1" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1595327106441" />
     <state x="183" y="81" key="DiffContextDialog" timestamp="1595319470611">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="183" y="81" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1595319470611" />
-    <state width="1262" height="303" key="GridCell.Tab.0.bottom" timestamp="1595326970643">
+    <state width="1262" height="303" key="GridCell.Tab.0.bottom" timestamp="1595327128812">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1595326970643" />
-    <state width="1262" height="303" key="GridCell.Tab.0.center" timestamp="1595326970643">
+    <state width="1262" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
+    <state width="1262" height="303" key="GridCell.Tab.0.center" timestamp="1595327128812">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1595326970643" />
-    <state width="1262" height="303" key="GridCell.Tab.0.left" timestamp="1595326970643">
+    <state width="1262" height="303" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
+    <state width="1262" height="303" key="GridCell.Tab.0.left" timestamp="1595327128812">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1595326970643" />
-    <state width="1262" height="303" key="GridCell.Tab.0.right" timestamp="1595326970643">
+    <state width="1262" height="303" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
+    <state width="1262" height="303" key="GridCell.Tab.0.right" timestamp="1595327128812">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1595326970643" />
+    <state width="1262" height="303" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
     <state width="1864" height="308" key="GridCell.Tab.1.bottom" timestamp="1594292666707">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -859,10 +776,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="335" y="56" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1593749833397" />
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1595321756223">
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1595327115311">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1595321756223" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1595327115311" />
     <state x="696" y="253" key="git4idea.merge.GitMergeDialog" timestamp="1595319491160">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -882,6 +799,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kad_api_test/LbReptile.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="176" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -889,7 +813,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="171" />
+      <option name="time" value="177" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -1117,18 +1041,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kad_api_test/LbReptiles.py" />
-    <entry file="file://$PROJECT_DIR$/kadselenium_code/Kad_Login.py">
+    <entry file="file://$PROJECT_DIR$/kad_api_test/DfyReptile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kadselenium_code/Kad_UpCookies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1143,58 +1059,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kadselenium_code/Kad_Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kad_api_test/YouMiReptile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2838">
+        <state relative-caret-position="231">
           <caret line="129" column="32" lean-forward="false" selection-start-line="129" selection-start-column="32" selection-end-line="134" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+    <entry file="file://$PROJECT_DIR$/kadselenium_code/Kad_UpCookies.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6820">
-          <caret line="311" column="0" lean-forward="false" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
+        <state relative-caret-position="509">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
+        <state relative-caret-position="117">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/xlwt/Workbook.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15554">
-          <caret line="709" column="0" lean-forward="false" selection-start-line="709" selection-start-column="0" selection-end-line="709" selection-end-column="0" />
+        <state relative-caret-position="39">
+          <caret line="311" column="0" lean-forward="false" selection-start-line="311" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/xlwt/CompoundDoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5808">
-          <caret line="265" column="36" lean-forward="true" selection-start-line="265" selection-start-column="36" selection-end-line="265" selection-end-column="36" />
+        <state relative-caret-position="216">
+          <caret line="265" column="36" lean-forward="false" selection-start-line="265" selection-start-column="36" selection-end-line="265" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kad_api_test/DfyReptile.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/xlwt/Workbook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="161">
+          <caret line="373" column="0" lean-forward="false" selection-start-line="373" selection-start-column="0" selection-end-line="373" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kad_api_test/LbReptile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="171" column="50" lean-forward="false" selection-start-line="171" selection-start-column="50" selection-end-line="171" selection-end-column="50" />
+        <state relative-caret-position="88">
+          <caret line="111" column="23" lean-forward="true" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="23" />
           <folding>
             <element signature="e#15#51#0" expanded="true" />
           </folding>
