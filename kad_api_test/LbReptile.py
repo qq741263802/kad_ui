@@ -102,8 +102,7 @@ def getErLangChaPhone():
     rowTitle = [u'联系人ID',u'姓名',u'电话',u'公司',u'职位',u'地址','备注','邮箱','微信号','价格','销量','客服电话','负责人姓名','负责人电话','来源','类型','级别','状态','媒体','意向程度','运营续费','运营状态','开户数','负责人','共享给员工','共享给部门']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(1, 2000):
-        time.sleep(30)
+    for ki in range(1150, 1350):
         try:
             #url1='https://www.erlangcha
             # .com/api/getShopList?page='+str(ki)+'&dat_source_type=3'
@@ -148,7 +147,10 @@ def getErLangChaPhone():
                     mobile = moblie_res['data']['mobile']
                     sku_min_price = moblie_res['data']['sku_min_price']/100
                     sku_max_price = moblie_res['data']['sku_max_price']/100
-                    price=str(sku_min_price)+'-'+str(sku_max_price)
+                    if(sku_min_price==sku_max_price):
+                        price=sku_min_price
+                    else:
+                        price = str(sku_min_price) + '-' + str(sku_max_price)
                     #sales_volume = pro_ki['sales_volume']
                     sales_volume=0
                     shopid = moblie_res['data']['shop_id']
