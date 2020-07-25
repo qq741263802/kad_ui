@@ -12,7 +12,7 @@ def getDfyPhone():
     rowTitle = [u'联系人ID',u'姓名',u'电话',u'公司',u'职位',u'地址','备注','邮箱','微信号','价格','销量','客服电话','负责人姓名','负责人电话','来源','类型','级别','状态','媒体','意向程度','运营续费','运营状态','开户数','负责人','共享给员工','共享给部门']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(1, 1000):
+    for ki in range(1000, 2000):
         try:
             url = 'https://luban.api.duofangyun.com/landingPageList?page='+str(ki)+'&pagesize=20&sort=create_date'
             header = {
@@ -59,8 +59,8 @@ def getDfyPhone():
                         price=sku_min_price
                     else:
                         price = str(sku_min_price) + '-' + str(sku_max_price)
-                    sales_volume = pro_ki['sales_volume']
-                    #sales_volume=0
+                    #sales_volume = pro_ki['sales_volume']
+                    sales_volume=0
                     shopid = moblie_res['data']['shop_id']
                     shopmobileurl='https://luban.snssdk.com/shop/info?id=' + str(shopid) + '&_ts=1595258534707'
                     shopmobile_response = requests.get(shopmobileurl)

@@ -43,7 +43,7 @@ def getErLangChaPhone():
     rowTitle = [u'联系人ID',u'姓名',u'电话',u'公司',u'职位',u'地址','备注','邮箱','微信号','价格','销量','客服电话','负责人姓名','负责人电话','来源','类型','级别','状态','媒体','意向程度','运营续费','运营状态','开户数','负责人','共享给员工','共享给部门']
     for i in range(0, len(rowTitle)):
         sheet1.write(0, i, rowTitle[i])
-    for ki in range(250, 500):
+    for ki in range(583, 1000):
         try:
             url1='https://www.erlangcha.com/api/getShopList?page='+str(ki)+'&dat_source_type=1'
             url = 'https://www.erlangcha.com/api/toadyNewProduct?dat_source_type=1&page='+str(ki)+''
@@ -118,3 +118,5 @@ def getErLangChaPhone():
             continue
         print("执行保存"+str(ki))
         f.save('D:/二郎查鲁班商品排行-'+str(os.getpid())+'.xls')
+
+getErLangChaPhone()
