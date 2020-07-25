@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e4a2815-52b2-480a-a053-40a8273f449a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kad_api_test/ErlangchaReptile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kad_api_test/DfyReptile.py" beforeDir="false" afterPath="$PROJECT_DIR$/kad_api_test/DfyReptile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kad_api_test/LbReptile.py" beforeDir="false" afterPath="$PROJECT_DIR$/kad_api_test/LbReptile.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,29 @@
       <recent name="D:\LF\kad_ui\kadselenium_test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.LbReptile">
+  <component name="RunManager" selected="Python.DfyReptile">
+    <configuration name="DfyReptile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kad_api_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kad_api_test/DfyReptile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Kad_Handle_add (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,9 +156,11 @@
       <item itemvalue="Python.Kad_Handle_add (1)" />
       <item itemvalue="Python.LbReptile" />
       <item itemvalue="Python tests.Unittests in Kad_Test.py" />
+      <item itemvalue="Python.DfyReptile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DfyReptile" />
         <item itemvalue="Python.LbReptile" />
         <item itemvalue="Python.Kad_Handle_add (1)" />
         <item itemvalue="Python.Kad_Handle_add" />
@@ -173,6 +200,10 @@
       <workItem from="1595057876900" duration="848000" />
       <workItem from="1595316701148" duration="5513000" />
       <workItem from="1595392685414" duration="512000" />
+      <workItem from="1595394745154" duration="51000" />
+      <workItem from="1595401431776" duration="3550000" />
+      <workItem from="1595479357900" duration="3338000" />
+      <workItem from="1595643261704" duration="3597000" />
     </task>
     <task id="LOCAL-00001" summary="修改包">
       <created>1593748922150</created>
@@ -237,7 +268,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595327110939</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="优化">
+      <created>1595393934280</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595393934280</updated>
+    </task>
+    <task id="LOCAL-00011" summary="优化">
+      <created>1595393972721</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1595393972721</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,46 +309,46 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="409" y="159" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1594271746702" />
-    <state x="454" y="1" key="CommitChangelistDialog2" timestamp="1595327106441">
+    <state x="454" y="1" key="CommitChangelistDialog2" timestamp="1595393967754">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="454" y="1" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1595327106441" />
+    <state x="454" y="1" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1595393967754" />
     <state x="183" y="81" key="DiffContextDialog" timestamp="1595319470611">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="183" y="81" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1595319470611" />
-    <state width="1262" height="303" key="GridCell.Tab.0.bottom" timestamp="1595327128812">
+    <state width="1864" height="307" key="GridCell.Tab.0.bottom" timestamp="1595654575906">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
-    <state width="1262" height="303" key="GridCell.Tab.0.center" timestamp="1595327128812">
+    <state width="1864" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575906" />
+    <state width="1864" height="307" key="GridCell.Tab.0.center" timestamp="1595654575905">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
-    <state width="1262" height="303" key="GridCell.Tab.0.left" timestamp="1595327128812">
+    <state width="1864" height="307" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575905" />
+    <state width="1864" height="307" key="GridCell.Tab.0.left" timestamp="1595654575905">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
-    <state width="1262" height="303" key="GridCell.Tab.0.right" timestamp="1595327128812">
+    <state width="1864" height="307" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575905" />
+    <state width="1864" height="307" key="GridCell.Tab.0.right" timestamp="1595654575905">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1262" height="303" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1595327128812" />
-    <state width="1864" height="308" key="GridCell.Tab.1.bottom" timestamp="1594292666707">
+    <state width="1864" height="307" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575905" />
+    <state width="1864" height="307" key="GridCell.Tab.1.bottom" timestamp="1595654575906">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="308" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1594292666707" />
-    <state width="1864" height="308" key="GridCell.Tab.1.center" timestamp="1594292666703">
+    <state width="1864" height="307" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575906" />
+    <state width="1864" height="307" key="GridCell.Tab.1.center" timestamp="1595654575906">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="308" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1594292666703" />
-    <state width="1864" height="308" key="GridCell.Tab.1.left" timestamp="1594292666703">
+    <state width="1864" height="307" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575906" />
+    <state width="1864" height="307" key="GridCell.Tab.1.left" timestamp="1595654575906">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="308" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1594292666703" />
-    <state width="1864" height="308" key="GridCell.Tab.1.right" timestamp="1594292666705">
+    <state width="1864" height="307" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575906" />
+    <state width="1864" height="307" key="GridCell.Tab.1.right" timestamp="1595654575906">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1864" height="308" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1594292666705" />
+    <state width="1864" height="307" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1595654575906" />
     <state x="183" y="81" key="MergeDialog" timestamp="1595321713707">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -316,18 +361,18 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="335" y="56" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1593749833397" />
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1595327115311">
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1595393974608">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1595327115311" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1595393974608" />
     <state x="696" y="253" key="git4idea.merge.GitMergeDialog" timestamp="1595319491160">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="696" y="253" key="git4idea.merge.GitMergeDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1595319491160" />
-    <state x="590" y="253" key="git4idea.merge.GitPullDialog" timestamp="1595319540115">
+    <state x="590" y="253" key="git4idea.merge.GitPullDialog" timestamp="1595393994877">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="590" y="253" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1595319540115" />
+    <state x="590" y="253" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1595393994877" />
     <state x="798" y="390" key="git4idea.ui.GitStashDialog" timestamp="1595319521058">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -340,7 +385,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kad_ui$Kad_Handle_add.coverage" NAME="Kad_Handle_add Coverage Results" MODIFIED="1593750123916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kadselenium_demo" />
     <SUITE FILE_PATH="coverage/kad_ui$Kad_Handle_add__1_.coverage" NAME="Kad_Handle_add (1) Coverage Results" MODIFIED="1593773403237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kadselenium_test" />
+    <SUITE FILE_PATH="coverage/kad_ui$DfyReptile.coverage" NAME="DfyReptile Coverage Results" MODIFIED="1595654575892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kad_api_test" />
     <SUITE FILE_PATH="coverage/kad_ui$Unittests_in_Kad_Test_py.coverage" NAME="Unittests in Kad_Test.py Coverage Results" MODIFIED="1593748819236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kadselenium_demo" />
-    <SUITE FILE_PATH="coverage/kad_ui$LbReptile.coverage" NAME="LbReptile Coverage Results" MODIFIED="1595326970626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kad_api_test" />
+    <SUITE FILE_PATH="coverage/kad_ui$LbReptile.coverage" NAME="LbReptile Coverage Results" MODIFIED="1595643715647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kad_api_test" />
   </component>
 </project>
